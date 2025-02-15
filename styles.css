@@ -1,0 +1,121 @@
+section {
+    margin-bottom: 40px; /* 設置每個 section 底部的間隔 */
+}
+
+p {
+    margin-bottom: 20px; /* 設置段落底部的間隔 */
+}
+
+h1 {
+    font-size: 2.5em; /* 調整 h1 標題字體大小 */
+    font-weight: bold; /* 確保字體加粗 */
+}
+
+h2 {
+    font-size: 2em; /* 調整 h2 標題字體大小 */
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em; /* 調整 h3 標題字體大小 */
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* 設置背景色為深灰 */
+    color: #fff; /* 設置字體顏色為白色，確保可讀性 */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #feee05;
+    text-decoration: none;
+    font-size: 1.2em; /* 調整字體大小 */
+    font-weight: bold; /* 設置字體加粗 */
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* 增加底部空間 */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 控制項目之間的間距 */
+}
+
+section#home p {
+    font-size: 1.1em; /* 調整字體大小 */
+}
+
+section#home img {
+    width: 80%; /* 調整圖片寬度 */
+    max-width: 1000px; /* 設置最大寬度 */
+    height: auto; /* 保持圖片比例 */
+    display: block;
+    margin: 0 auto; /* 使圖片居中 */
+}
+
+section#teachers li img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 20px auto 20px;; /* 增加圖片底部的間隔 */
+}
+
+section#teachers p,
+section#teachers ul li {
+    font-size: 1.1em; /* 調整字體大小 */
+}
+
+
+section#courses p,
+section#courses ul li {
+    font-size: 1.1em; /* 調整字體大小 */
+}
+
+section#ideas p,
+section#ideas ul li {
+    font-size: 1.1em; /* 調整字體大小 */
+}
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: #FFD700; /* 按鈕背景色 */
+    color: #333; /* 按鈕文字顏色 */
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #FFC107; /* 按鈕懸停時的背景色 */
+}
