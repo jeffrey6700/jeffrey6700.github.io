@@ -8,11 +8,18 @@
     <style>
         .article-list {
             margin: 20px 0;
+            text-align: left;  /* 確保內容靠左對齊 */
+        }
+
+        .article-list h3 {
+            text-align: left;  /* 標題靠左對齊 */
+            margin-bottom: 15px;
         }
 
         .article-columns {
-            column-count: 2;
-            column-gap: 40px;
+            column-count: 1;
+            max-width: 800px;
+            margin: 0;  /* 移除置中對齊 */
         }
 
         .article-columns ul {
@@ -22,10 +29,11 @@
         }
 
         .article-columns li {
-            margin-bottom: 8px;  /* 減少間距，原本可能是更大的值 */
+            margin-bottom: 8px;
             padding: 5px;
             break-inside: avoid;
             color: #333;
+            text-align: left;  /* 確保列表項目靠左對齊 */
         }
 
         .article-columns a {
@@ -50,6 +58,51 @@
             .article-columns {
                 column-count: 1;
             }
+        }
+
+        .teacher-profile {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;  /* 減少元素間距 */
+            margin-bottom: 20px;  /* 減少教師介紹之間的間距 */
+        }
+
+        .teacher-content {
+            margin-bottom: 10px;  /* 減少文字與圖片之間的間距 */
+        }
+
+        .teacher-image img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            margin: 0;  /* 移除圖片的外邊距 */
+        }
+
+        #teachers ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #teachers h2 {
+            margin-bottom: 10px;  /* 減少標題與內容的間距 */
+        }
+
+        #teachers p {
+            margin-bottom: 15px;  /* 減少段落間的間距 */
+        }
+
+        .teacher-info {
+            flex: 1;
+        }
+
+        .teacher-info h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .teacher-info p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -100,19 +153,12 @@
                     <div class="teacher-content">
                         班主任：本書院班主任曾擔任澳洲墨爾本大學教育研究所訪問學者、芝加哥伊利諾理工大學博士後研究員，並於 2015 年取得國立彰化師範大學理學博士學位。擁有超過三十年的體制外教育經驗，深諳學生的學習動機、學習策略與學習成效，能夠因材施教，幫助學生發揮最大潛能。目前擔任仕瑪書院英文教師，致力於引導學生培養語言能力，提升學術競爭力，並在多元學習環境中成長。
                     </div>
-                    <div class="teacher-image">
-                        <img src="Jeffrey.jpg" alt="班主任">
-                    </div>
                 </li>
                 <li class="teacher-profile">
                     <div class="teacher-content">
                         Teacher Kuo：畢業於東吳大學數學系，並取得逢甲大學數學研究所學位，擁有多年體制外教育與個別輔導經驗。對於數學知識的應用、解題技巧的培養及邏輯思維的提升有深入研究，能夠針對不同學習需求提供有效的教學策略。目前擔任仕瑪書院數學教師，致力於幫助學生建立穩固的數學基礎，提升分析與解題能力，並在學習過程中培養獨立思考與問題解決的能力。
                     </div>
-                    <div class="teacher-image">
-                        <img src="Kuo.jpg" alt="郭老師">
-                    </div>
                 </li>
-                <!-- 可以根據需要添加更多課程 -->
             </ul>
         </section>  
         
