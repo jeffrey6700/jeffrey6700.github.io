@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仕瑪書院</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .article-list {
+            margin: 20px 0;
+        }
+
+        .article-columns {
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+        .article-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .article-list li {
+            break-inside: avoid;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .article-list a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .article-list a:hover {
+            color: #0066cc;
+        }
+
+        .article-source-inline {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .article-source-inline a {
+            color: #0066cc;
+        }
+
+        @media (max-width: 768px) {
+            .article-columns {
+                column-count: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -74,7 +122,7 @@
             <p>憑藉多年教學經驗，我們致力於提供體制外教育的新典範，透過以下幾項核心原則，幫助學生建立有效的學習模式，提升學習成效：</p>
             <ul>
                 <li>教學設計：為確保學生能獲得充分的學習支持，我們採取圍桌式的教學設計，讓教師能夠關注每位學生的學習需求，提供個別化指導與即時回饋。</li>
-                <li>學習態度：我們深信 學習態度決定學習成效。因此，我們期許學生能主動學習、積極求知，透過自發性的學習動機，發揮最大的學習潛能。</li>
+                <li>學習態度：我們深信學習態度決定學習成效。因此，我們期許學生能主動學習、積極求知，透過自發性的學習動機，發揮最大的學習潛能。</li>
                 <li>學習願景：沒有目標，就無法抵達目的地。 我們鼓勵學生設定清晰的學習目標，並持之以恆地努力，讓學習成為邁向未來的重要基石。</li>
                 <li>戒除手機依賴：在培養自主管理能力之前，我們強烈建議學生適度控管手機及 3C 產品的使用，減少干擾，專注於學習，以建立良好的學習習慣。</li>
             </ul>
@@ -85,27 +133,30 @@
 
             <div class="article-list">
                 <h3>文章列表：</h3>
-                <ul>
-                    <li><a href="#article1">幫助孩子找回學習動力，重回正軌</a> 
-                        <span class="article-source-inline">(<a href="https://futureparenting.cwgv.com.tw/family/content/index/6265" target="_blank">原文連結</a>)</span>
-                    </li>
-                    <li><a href="#article2">教育是為了讓孩子受益，還是讓他考試得高分？</a>
-                        <span class="article-source-inline">(<a href="https://opinion.cw.com.tw/blog/profile/52/article/5043" target="_blank">原文連結</a>)</span>
-                    </li>
-                    <li><a href="#article3">成績重要，還是找到未來的方向重要？</a>
-                        <span class="article-source-inline">(<a href="https://opinion.cw.com.tw/blog/profile/52/article/4950" target="_blank">原文連結</a>)</span>
-                    </li>
-                    <li><a href="#article4">數學如何提升問題解決能力？</a>
-                        <span class="article-source-inline">(<a href="https://opinion.cw.com.tw/blog/profile/52/article/5191" target="_blank">原文連結</a>)</span>
-                    </li>
-                    <li><a href="#article5">時間管理與學習成就的重要性</a></li>
-                    <li><a href="#article6">學習如何學習：為自己的未來人生負責</a></li>
-                    <li><a href="#article7">培養自律：幫助孩子取得學習成就的關鍵</a></li>
-                    <li><a href="#article8">學習的真諦：理解自己，比單純追求成功更重要</a></li>
-                    <li><a href="#article9">手機時代的親子教育：陪伴、選擇與自主學習</a></li>
-                    <li><a href="#article10">學習的真正意義：為選擇權努力，而非為成就競爭</a></li>
-                    <li><a href="#article11">以終為始：讓學習與人生不再迷航</a></li>
-                </ul>
+                <div class="article-columns">
+                    <ul>
+                        <li><a href="#article1">幫助孩子找回學習動力，重回正軌</a> 
+                            <span class="article-source-inline">(<a href="https://futureparenting.cwgv.com.tw/family/content/index/6265" target="_blank">原文連結</a>)</span>
+                        </li>
+                        <li><a href="#article2">教育是為了讓孩子受益，還是讓他考試得高分？</a>
+                            <span class="article-source-inline">(<a href="https://opinion.cw.com.tw/blog/profile/52/article/5043" target="_blank">原文連結</a>)</span>
+                        </li>
+                        <li><a href="#article3">成績重要，還是找到未來的方向重要？</a>
+                            <span class="article-source-inline">(<a href="https://opinion.cw.com.tw/blog/profile/52/article/4950" target="_blank">原文連結</a>)</span>
+                        </li>
+                        <li><a href="#article4">數學如何提升問題解決能力？</a>
+                            <span class="article-source-inline">(<a href="https://opinion.cw.com.tw/blog/profile/52/article/5191" target="_blank">原文連結</a>)</span>
+                        </li>
+                        <li><a href="#article5">時間管理與學習成就的重要性</a></li>
+                        <li><a href="#article6">學習如何學習：為自己的未來人生負責</a></li>
+                        <li><a href="#article7">培養自律：幫助孩子取得學習成就的關鍵</a></li>
+                        <li><a href="#article8">學習的真諦：理解自己，比單純追求成功更重要</a></li>
+                        <li><a href="#article9">手機時代的親子教育：陪伴、選擇與自主學習</a></li>
+                        <li><a href="#article10">學習的真正意義：為選擇權努力，而非為成就競爭</a></li>
+                        <li><a href="#article11">以終為始：讓學習與人生不再迷航</a></li>
+                        <li><a href="#article12">青少年叛逆對學習與生涯規劃的影響</a></li>
+                    </ul>
+                </div>
             </div>
 
             <article id="article1">
@@ -240,6 +291,15 @@
                 <p>「持之以恆」是成功哲學中亙古不變的真理。我們無法掌控未來的一切，但我們可以掌控今天的選擇。當孩子能夠以終為始，確立人生方向，並透過短期目標、內在動機、學習習慣與成長型思維來持續努力，他們的未來將充滿無限可能。
 
                 現在的努力，也許看似微不足道，但它們將在未來的某一天，成為開啟成功之門的關鍵。當你還擁有機會時，請用心努力，因為沒有到不了的目的地，只有下不了的決心。</p>
+            </article>
+
+            <article id="article12">
+                <h3>青少年叛逆對學習與生涯規劃的影響</h3>
+                <p>青少年叛逆是許多家長在孩子成長過程中必須面對的挑戰。這一階段的孩子往往展現出強烈的自主意識，對權威產生質疑，甚至出現情緒不穩、學業退步或抗拒規範的行為。研究指出，青少年叛逆與生理、心理和社會因素息息相關。生理上，青少年大腦前額葉尚未完全發育，使其在衝動控制與決策能力上仍顯不足。心理層面上，這一時期的孩子正在尋找自我認同，試圖擺脫父母的影響，發展獨立的價值觀。社會環境則可能透過同儕壓力、學校適應問題及社會文化影響，進一步塑造青少年的叛逆行為。這種叛逆行為不僅影響親子關係，也可能對孩子的學習與生涯規劃帶來長遠的影響。</p>
+
+                <p>在學習方面，叛逆的青少年可能會表現出學業動機下降、拒學、課堂注意力不集中等問題。他們可能因為對教師權威的不信任或對學校規範的抗拒，而選擇逃避學習。此外，學校適應不良，例如與師生或同儕的關係緊張，也可能導致他們對學習失去興趣，進一步影響學業表現。值得注意的是，叛逆行為也可能影響青少年對於補習的意願及其成效。一些青少年可能因反抗家長的安排而拒絕補習，即便參與補習，也可能因缺乏學習動機或對補習老師的抵觸心理，而導致學習效果不彰。另一方面，部分青少年則可能因學校適應不良或學業壓力而選擇補習作為補救措施，這類學生若能獲得適當的引導與學習策略，仍能透過補習提升學習表現。至於生涯規劃，叛逆行為可能讓青少年缺乏長遠規劃的意識。他們可能不願聽從父母或師長的建議，而選擇隨性決定未來方向。有些青少年甚至因為叛逆行為而涉入偏差行為，例如逃學或違法行為，進而影響未來的就業機會與職業發展。</p>
+
+                <p>面對青少年的叛逆行為，家長可以採取多種方式來引導與改善。首先，建立良好的親子溝通至關重要。青少年渴望被理解與尊重，因此家長應耐心傾聽孩子的想法，避免以高壓手段管教，否則可能適得其反。其次，心理與生涯輔導也是有效的支持策略。透過專業的心理輔導，青少年可以學習更健康的情緒管理與問題解決技巧，進而提升自我認識與生涯規劃能力。學校也可以透過個別教育計畫、反霸凌政策以及生涯探索活動，幫助青少年找到學習的動機與未來方向。此外，家長應積極尋求學校與社會資源的協助，例如職業培訓、心理諮商及青少年支持計畫，以提供更完整的支援系統。政府與社會機構的介入，能夠有效幫助叛逆青少年重新融入學校與社會，降低未來面臨的風險。青少年叛逆行為雖然是成長過程中的常見現象，但如果未能妥善處理，可能對學習與生涯發展帶來深遠的影響。家長應以開放與耐心的態度陪伴孩子渡過這一階段，透過有效的溝通與適切的輔導，幫助孩子建立正向的學習態度與未來規劃。</p>
             </article>
             <a href="#home" class="back-to-top">回首頁</a>
         </section>
